@@ -12,11 +12,15 @@
 """
 
 def main():
-    """
-    Эта функция вызывается автоматически при запуске скрипта в консоли
-    В ней надо заменить pass на ваш код
-    """
-    pass
+    with open('referat.txt', 'r', encoding='utf-8') as file:
+        content = file.read()
+        print(len(content))
+
+        print(len(content.split()))
+
+    with open('referat2.txt', 'w', encoding='utf-8') as file:
+        file.write(content.replace('.','!'))
+        
 
 if __name__ == "__main__":
     main()
