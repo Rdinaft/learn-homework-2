@@ -14,9 +14,8 @@
 def main():
     with open('referat.txt', 'r', encoding='utf-8') as file:
         content = file.read()
-        print(len(content))
-
-        print(len(content.split()))
+    print(len(content))
+    print(len(content.split()))
 
     with open('referat2.txt', 'w', encoding='utf-8') as file:
         file.write(content.replace('.','!'))
